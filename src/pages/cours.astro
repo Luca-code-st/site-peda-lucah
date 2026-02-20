@@ -3,10 +3,10 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Cours GitHub">
-  <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+  <div class="bg-gradient-to-r from-pink-600 to-pink-800 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-display font-bold mb-4">Cours GitHub</h1>
-      <p class="text-xl text-blue-100">Guide complet pour maîtriser Git et GitHub</p>
+      <p class="text-xl text-pink-100">Guide complet pour maîtriser Git et GitHub</p>
     </div>
   </div>
 
@@ -23,11 +23,11 @@ import Layout from '../layouts/Layout.astro';
         </p>
         <ul class="space-y-3 text-gray-700">
           <li class="flex items-start">
-            <span class="font-bold text-blue-600 mr-2">Git :</span>
+            <span class="font-bold text-pink-600 mr-2">Git :</span>
             <span>Un système de contrôle de version distribué créé en 2005 par Linus Torvalds. C'est un logiciel qui tourne sur votre ordinateur et qui permet de suivre les modifications de vos fichiers.</span>
           </li>
           <li class="flex items-start">
-            <span class="font-bold text-green-600 mr-2">GitHub :</span>
+            <span class="font-bold text-pink-600 mr-2">GitHub :</span>
             <span>Une plateforme web créée en 2008 qui héberge des dépôts Git en ligne. C'est comme un "réseau social pour développeurs" qui permet de collaborer et de partager du code.</span>
           </li>
         </ul>
@@ -76,7 +76,7 @@ import Layout from '../layouts/Layout.astro';
           <div>
             <h4 class="font-bold text-lg mb-2">Windows</h4>
             <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-4">
-              <li>Téléchargez Git depuis <a href="https://git-scm.com" target="_blank" class="text-blue-600 hover:underline">git-scm.com</a></li>
+              <li>Téléchargez Git depuis <a href="https://git-scm.com" target="_blank" class="text-pink-600 hover:underline">git-scm.com</a></li>
               <li>Lancez l'installateur et suivez les étapes (gardez les options par défaut)</li>
               <li>Vérifiez l'installation en ouvrant PowerShell et tapez : <code class="bg-gray-100 px-2 py-1 rounded">git --version</code></li>
             </ol>
@@ -109,7 +109,7 @@ git config --list
       <div class="card mb-6">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">2.3 Créer un compte GitHub</h3>
         <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-4">
-          <li>Allez sur <a href="https://github.com" target="_blank" class="text-blue-600 hover:underline">github.com</a></li>
+          <li>Allez sur <a href="https://github.com" target="_blank" class="text-pink-600 hover:underline">github.com</a></li>
           <li>Cliquez sur "Sign up" et créez votre compte</li>
           <li>Vérifiez votre email</li>
           <li>Complétez votre profil (photo, bio, etc.)</li>
@@ -177,7 +177,7 @@ git add .                         # Ajoute tous les fichiers modifiés
         <div class="code-block">
 git commit -m "Description des modifications"
         </div>
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mt-4">
+        <div class="bg-pink-50 border-l-4 border-pink-500 p-4 mt-4">
           <p class="text-sm text-gray-700">
             <strong>💡 Astuce :</strong> Écrivez des messages de commit clairs et descriptifs. 
             Au lieu de "changements", préférez "Ajout de la fonctionnalité de connexion utilisateur".
@@ -350,7 +350,7 @@ git clone https://github.com/utilisateur/projet.git
       <div class="card mb-6">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">5.2 Créer un compte Netlify</h3>
         <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-4">
-          <li>Allez sur <a href="https://www.netlify.com" target="_blank" class="text-blue-600 hover:underline">netlify.com</a></li>
+          <li>Allez sur <a href="https://www.netlify.com" target="_blank" class="text-pink-600 hover:underline">netlify.com</a></li>
           <li>Cliquez sur "Sign up"</li>
           <li>Choisissez "Sign up with GitHub" (c'est le plus simple)</li>
           <li>Autorisez Netlify à accéder à votre compte GitHub</li>
@@ -380,7 +380,7 @@ git clone https://github.com/utilisateur/projet.git
             <strong>Déployez :</strong> Cliquez sur "Deploy site"
           </li>
         </ol>
-        <div class="bg-green-50 border-l-4 border-green-500 p-4 mt-4">
+        <div class="bg-pink-50 border-l-4 border-pink-500 p-4 mt-4">
           <p class="text-sm text-gray-700">
             <strong>🎉 Félicitations !</strong> Votre site est maintenant en ligne ! Netlify vous donne une URL du type : 
             <code class="bg-white px-2 py-1 rounded">random-name-123456.netlify.app</code>
@@ -463,7 +463,7 @@ git commit -m "update"
           </div>
           <div>
             <p class="text-gray-700 mb-2">✅ Bons exemples :</p>
-            <div class="code-block text-green-400">
+            <div class="code-block text-pink-400">
 git commit -m "Correction du bug d'affichage sur mobile"<br/>
 git commit -m "Ajout de la page de contact"<br/>
 git commit -m "Mise à jour de la documentation"
@@ -482,7 +482,7 @@ git commit -m "Mise à jour de la documentation"
 
     <!-- Bouton vers QCM -->
     <div class="text-center mt-16 mb-8">
-      <div class="card bg-gradient-to-br from-green-50 to-blue-50 border-blue-200">
+      <div class="card bg-gradient-to-br from-pink-50 to-pink-50 border-pink-200">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">🎯 Prêt pour le QCM ?</h3>
         <p class="text-lg text-gray-700 mb-6">
           Vous avez terminé le cours ! Il est temps de tester vos connaissances avec le QCM final de 20 questions.
@@ -529,7 +529,7 @@ git commit -m "Mise à jour de la documentation"
       if (!indicator) {
         indicator = document.createElement('div');
         indicator.id = 'save-indicator';
-        indicator.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50';
+        indicator.className = 'fixed bottom-4 right-4 bg-pink-500 text-white px-4 py-2 rounded-lg shadow-lg z-50';
         indicator.textContent = '✓ Sauvegardé';
         document.body.appendChild(indicator);
       }

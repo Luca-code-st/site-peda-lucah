@@ -21,19 +21,20 @@ const { title, description = "Support de cours sur GitHub pour les élèves de B
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="min-h-screen flex flex-col">
-  <header class="bg-white shadow-sm border-b border-gray-200">
+  <header class="bg-white shadow-sm border-b border-yellow-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center py-4">
         <div class="flex items-center space-x-4">
-          <a href="/" class="text-2xl font-display font-bold text-blue-600">
+          <a href="/" class="text-2xl font-display font-bold text-yellow-600">
             GitHub Pédagogique
           </a>
         </div>
         <nav class="hidden md:flex space-x-6">
-          <a href="/" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Accueil</a>
-          <a href="/cours" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Cours</a>
-          <a href="/exercices" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Exercices</a>
-          <a href="/qcm" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">QCM Final</a>
+          <a href="/" class="text-yellow-700 hover:text-yellow-600 font-medium transition-colors">Accueil</a>
+          <a href="/cours" class="text-yellow-700 hover:text-yellow-600 font-medium transition-colors">Cours</a>
+          <a href="/exercices" class="text-yellow-700 hover:text-yellow-600 font-medium transition-colors">Exercices</a>
+          <a href="/qcm" class="text-yellow-700 hover:text-yellow-600 font-medium transition-colors">QCM Final</a>
+          <a href="/about" class="text-yellow-700 hover:text-yellow-600 font-medium transition-colors">À propos</a>
         </nav>
       </div>
     </div>
@@ -43,7 +44,7 @@ const { title, description = "Support de cours sur GitHub pour les élèves de B
     <slot />
   </main>
 
-  <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+  <footer class="bg-yellow-900 text-yellow-300 py-8 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center space-y-2">
         <p class="text-sm">© 2026 Eric MORMIN — Tous droits réservés</p>
@@ -52,7 +53,7 @@ const { title, description = "Support de cours sur GitHub pour les élèves de B
         </p>
         <p class="text-sm">Ressource pédagogique réalisée pour La Salle Saint-Nicolas, Issy-les-Moulineaux</p>
         <p class="text-sm font-semibold">Bac Pro CIEL, BTS CIEL, BTS SIO</p>
-        <p class="text-xs text-gray-500 mt-4">Version 1.0.0</p>
+        <p class="text-xs text-yellow-500 mt-4">Version 1.0.0</p>
       </div>
     </div>
   </footer>

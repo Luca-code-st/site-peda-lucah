@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="QCM Final">
-  <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-12">
+  <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-display font-bold mb-4">QCM Final</h1>
       <p class="text-xl text-purple-100">20 questions pour valider vos connaissances</p>
@@ -12,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     
-    <div class="card bg-blue-50 border-blue-200 mb-8">
+    <div class="card bg-pink-50 border-pink-200 mb-8">
       <h3 class="text-xl font-bold text-gray-900 mb-3">📋 Instructions</h3>
       <ul class="space-y-2 text-gray-700">
         <li>✓ Répondez aux 20 questions ci-dessous</li>
@@ -520,7 +520,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Résultat -->
-      <div id="result" class="hidden card bg-gradient-to-br from-green-50 to-blue-50 border-green-300">
+      <div id="result" class="hidden card bg-gradient-to-br from-pink-50 to-pink-50 border-pink-300">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">🎯 Votre résultat</h3>
         <p id="score-text" class="text-xl mb-4"></p>
         <p id="feedback-text" class="text-gray-700 mb-6"></p>
@@ -596,10 +596,10 @@ import Layout from '../layouts/Layout.astro';
       
       if (percentage >= 90) {
         feedbackText.textContent = '🎉 Excellent ! Vous maîtrisez parfaitement GitHub !';
-        feedbackText.className = 'text-green-700 mb-6 text-lg font-semibold';
+        feedbackText.className = 'text-pink-700 mb-6 text-lg font-semibold';
       } else if (percentage >= 75) {
         feedbackText.textContent = '✅ Très bien ! Vous avez une bonne compréhension de GitHub.';
-        feedbackText.className = 'text-blue-700 mb-6 text-lg font-semibold';
+        feedbackText.className = 'text-pink-700 mb-6 text-lg font-semibold';
       } else if (percentage >= 60) {
         feedbackText.textContent = '👍 Bien ! Revoyez quelques points et vous serez au top.';
         feedbackText.className = 'text-yellow-700 mb-6 text-lg font-semibold';
