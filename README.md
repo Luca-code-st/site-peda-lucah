@@ -1,133 +1,165 @@
-# GitHub Pédagogique
+# 📘 GitHub Pédagogique
 
-Support de cours progressif et participatif sur GitHub pour les élèves de Bac Pro CIEL, BTS CIEL et BTS SIO.
+Support de cours progressif, interactif et participatif dédié aux élèves de **Bac Pro CIEL**, **BTS CIEL** et **BTS SIO**.
 
-## 🎯 Objectif
+---
 
-Ce projet est un support de cours interactif qui permet aux élèves d'apprendre :
-- Les bases de Git et GitHub
-- Les commandes Git essentielles
-- Comment pousser un projet sur GitHub
-- Comment déployer un site sur Netlify
+## 🎯 Objectifs pédagogiques
 
-## 🚀 Installation
+Ce projet permet aux élèves de :
 
-### Prérequis
+- Comprendre les fondamentaux de **Git** et **GitHub**
+- Maîtriser les commandes Git essentielles
+- Publier un projet sur GitHub
+- Déployer un site web en ligne via **Netlify**
+- Travailler en autonomie sur un projet réel
+- Valider leurs acquis grâce à un QCM final
 
-- Node.js 18+ installé sur votre machine
-- Git installé
-- Un compte GitHub
+L’approche est progressive, concrète et orientée pratique.
+
+---
+
+## 🚀 Installation du projet
+
+### 🔧 Prérequis
+
+Avant de commencer, assurez-vous d’avoir installé :
+
+- Node.js 18 ou supérieur  
+- Git  
+- Un compte GitHub  
 - Un compte Netlify (gratuit)
 
-### Installation locale
+---
 
-1. **Cloner le projet**
-```bash
-git clone https://github.com/votre-nom/github-pedagogique.git
-cd github-pedagogique
-```
+### 💻 Installation en local
 
-2. **Installer les dépendances**
-```bash
-npm install
-```
+1️⃣ Cloner le dépôt
 
-3. **Lancer le serveur de développement**
-```bash
-npm run dev
-```
+    git clone https://github.com/votre-nom/github-pedagogique.git
+    cd github-pedagogique
 
-Le site sera accessible sur `http://localhost:4321`
+2️⃣ Installer les dépendances
 
-## 📦 Déploiement sur Netlify
+    npm install
 
-### Méthode 1 : Via l'interface Netlify (recommandée)
+3️⃣ Lancer le serveur de développement
 
-1. Créez un compte sur [netlify.com](https://www.netlify.com)
-2. Connectez-vous avec votre compte GitHub
-3. Cliquez sur "Add new site" → "Import an existing project"
-4. Sélectionnez ce dépôt GitHub
+    npm run dev
+
+Le site sera accessible à l’adresse :
+
+    http://localhost:4321
+
+---
+
+## 🌍 Déploiement sur Netlify
+
+### ✅ Méthode recommandée : via l’interface Netlify
+
+1. Créez un compte sur https://www.netlify.com  
+2. Connectez-vous avec votre compte GitHub  
+3. Cliquez sur **Add new site → Import an existing project**  
+4. Sélectionnez le dépôt GitHub  
 5. Configurez le build :
-   - **Build command** : `npm run build`
-   - **Publish directory** : `dist`
-6. Cliquez sur "Deploy site"
+   - Build command : `npm run build`
+   - Publish directory : `dist`
+6. Cliquez sur **Deploy site**
 
-### Méthode 2 : Via la ligne de commande
+---
 
-```bash
-# Installer Netlify CLI
-npm install -g netlify-cli
+### 💻 Méthode alternative : via la ligne de commande
 
-# Se connecter à Netlify
-netlify login
+    # Installer Netlify CLI
+    npm install -g netlify-cli
 
-# Déployer
-netlify deploy --prod
-```
+    # Se connecter à Netlify
+    netlify login
 
-## 📚 Structure du projet
+    # Déployer en production
+    netlify deploy --prod
 
-```
-github-pedagogique/
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro          # Layout principal
-│   ├── pages/
-│   │   ├── index.astro           # Page d'accueil
-│   │   ├── cours.astro           # Page de cours
-│   │   └── qcm.astro             # QCM final
-│   └── styles/
-│       └── global.css            # Styles globaux
-├── public/
-│   └── images/                   # Images du site
-├── astro.config.mjs              # Configuration Astro
-├── tailwind.config.mjs           # Configuration Tailwind
-├── package.json                  # Dépendances
-└── README.md                     # Ce fichier
-```
+---
+
+## 📂 Structure du projet
+
+    github-pedagogique/
+    ├── src/
+    │   ├── layouts/
+    │   │   └── Layout.astro
+    │   ├── pages/
+    │   │   ├── index.astro
+    │   │   ├── cours.astro
+    │   │   └── qcm.astro
+    │   └── styles/
+    │       └── global.css
+    ├── public/
+    │   └── images/
+    ├── astro.config.mjs
+    ├── tailwind.config.mjs
+    ├── package.json
+    └── README.md
+
+---
 
 ## ✨ Fonctionnalités
 
-- ✅ Cours progressif sur GitHub
-- ✅ Exercices pratiques intégrés
-- ✅ QCM de 20 questions
-- ✅ Sauvegarde automatique des réponses (localStorage)
-- ✅ Possibilité de reprendre où on s'est arrêté
-- ✅ Envoi des résultats par email
-- ✅ Design responsive
-- ✅ Déploiement automatique sur Netlify
+- ✅ Cours progressif et interactif  
+- ✅ Exercices pratiques intégrés  
+- ✅ QCM final de 20 questions  
+- ✅ Sauvegarde automatique des réponses (localStorage)  
+- ✅ Reprise de session possible  
+- ✅ Envoi des résultats par email  
+- ✅ Design responsive  
+- ✅ Déploiement automatique sur Netlify  
+
+---
 
 ## 🎓 Utilisation pédagogique
 
-Ce support de cours est conçu pour :
-1. Être suivi de manière autonome par les élèves
-2. Permettre aux élèves de pratiquer sur le projet lui-même
-3. Valider les connaissances via le QCM final
+Ce support est conçu pour :
 
-Les élèves peuvent envoyer leurs résultats du QCM à leur enseignant à l'adresse : **mormin@st-nicolas.fr**
+1. Être utilisé en autonomie ou en classe
+2. Servir de base de manipulation Git réelle
+3. Permettre une évaluation formative via le QCM
+4. Encourager la publication et le déploiement d’un projet complet
+
+Les élèves peuvent envoyer leurs résultats à l’adresse :
+
+**mormin@st-nicolas.fr**
+
+---
 
 ## 🛠️ Technologies utilisées
 
-- [Astro](https://astro.build) - Framework web moderne
-- [Tailwind CSS](https://tailwindcss.com) - Framework CSS
-- [Netlify](https://netlify.com) - Hébergement et déploiement
+- Astro — Framework web moderne orienté performance  
+- Tailwind CSS — Framework CSS utilitaire  
+- Netlify — Hébergement et déploiement continu  
 
-## 📝 Licence
-
-© 2026 Eric MORMIN — Tous droits réservés
-
-Édité par [EKM Conseils](https://www.ekmconseils.eu)
-
-Ressource pédagogique réalisée pour La Salle Saint-Nicolas, Issy-les-Moulineaux
-
-Bac Pro CIEL, BTS CIEL, BTS SIO
+---
 
 ## 👨‍🏫 Auteur
 
 **Eric MORMIN**  
 Email : mormin@st-nicolas.fr  
-Site : [www.ekmconseils.eu](https://www.ekmconseils.eu)
+Site : https://www.ekmconseils.eu  
+
+Ressource pédagogique réalisée pour  
+La Salle Saint-Nicolas — Issy-les-Moulineaux  
+
+Formations concernées :  
+- Bac Pro CIEL  
+- BTS CIEL  
+- BTS SIO  
 
 ---
 
-Version 1.0.0
+## 📝 Licence
+
+© 2026 Eric MORMIN — Tous droits réservés  
+
+Édité par Luca HALLET  
+
+---
+
+**Version 1.0.0**
